@@ -1,0 +1,250 @@
+/* RESET */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* BASE STYLES */
+  html, body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    height: 100%;
+    background: url("background6.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00509e;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  header h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: opacity 0.3s;
+  }
+  nav a:hover {
+    opacity: 0.7;
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    text-align: center;
+    background: url('https://via.placeholder.com/1600x900.png?text=Snowy+Landscape')
+                no-repeat center center/cover;
+    margin: 0;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(0,0,0,0.4);
+  }
+  .hero-content {
+    position: relative;
+    color: #fff;
+    padding: 2rem;
+    z-index: 1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .hero-content h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  
+  /* MAIN WRAPPER */
+  main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    flex: 1;
+  }
+  
+  /* SHARED SECTION CARD STYLE */
+  .section-card {
+    background: rgba(255,255,255,0.85);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .section-card h2, .section-card h3 {
+    color: #00509e;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* PRICING SECTION */
+ 
+  .pricing h2 {
+    text-align: center;
+  }
+  
+  /* TABLE STYLES */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  thead {
+    background: #00509e;
+  }
+  thead th {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  tbody td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 300;
+  }
+  tbody td:nth-child(1) {
+    background-color: #e6f2fb;
+    font-weight: 500;
+    text-align: left;
+  }
+  .check {
+    color: green;
+    font-weight: 600;
+  }
+  .xmark {
+    color: red;
+    font-weight: 600;
+  }
+  
+  /* OFFERS BOX */
+  .offers-box {
+    background: rgba(255,255,255,0.9);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  .offers-box p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0.5rem 0 0;
+  }
+  
+  /* FOOTNOTES */
+  .footnotes {
+    background: rgba(255,255,255,0.9);
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  .footnotes p {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .footnotes ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin: 0.5rem 1rem;
+    padding: 0;
+  }
+  .footnotes li {
+    margin-bottom: 0.4rem;
+    font-weight: 300;
+  }
+  
+  /* GALLERY */
+  .gallery-content img {
+    width: 30%;
+    margin: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  }
+  
+  /* ABOUT & CONTACT */
+  .about-content, .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+  .contact form label {
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+  }
+  .contact form button {
+    background: #00509e;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 3px;
+    margin-top: 1rem;
+    transition: background 0.3s;
+  }
+  .contact form button:hover {
+    background: #003f7e;
+  }
+  
+  /* FOOTER */
+  footer {
+    background: #00509e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero-content h2 {
+      font-size: 2rem;
+    }
+    .gallery-content img {
+      width: 80%;
+    }
+    table thead th, table tbody td {
+      font-size: 0.9rem;
+    }
+  }
+  
