@@ -298,3 +298,9 @@ footer {
     font-size: 1rem;
   }
 }
+tbody tr:nth-child(even) {
+  background-color: #ffe6e6; /* light pink */
+}
+tbody tr:nth-child(odd) {
+  background-color: #fff;    /* unchanged (white) */
+}
