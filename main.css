@@ -139,16 +139,18 @@ tbody td {
   vertical-align: middle;
   font-weight: 300;
 }
-/* Optional: color only the first column differently */
-tbody td:nth-child(1) {
+/* Remove or comment out the following if you want full-row color on even rows */
+/* tbody td:nth-child(1) {
   background-color: #e6f2fb;
   font-weight: 500;
   text-align: left;
-}
+} */
+
 /* Hover effect on rows */
 tbody tr:hover {
   background-color: #f9f9f9;
 }
+
 /* Make every even row pink; every odd row white */
 tbody tr:nth-child(even) {
   background-color: #ffe6e6; /* Light pink */
